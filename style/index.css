@@ -1,1 +1,248 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /*put a border around everything to see where it stops and starts*/
+    /*     border:1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: "PT Sans", sans-serif;
+    background-color: #fffafa;
+    scrollbar-width: none;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #d72638;
+    align-items: center;
+    height: 8.5vh;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .name {
+    color: #140f2d;
+    margin-left: 2%;
+    font-size: 2.4rem;
+    display: flex;
+}
+
+header nav .links {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .links a {
+    background-color: #3f88c5;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    color: #140f2d;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#top {
+    height: 85vh;
+    background-image: url(https://wallpaperaccess.com/full/1668047.jpg);
+    margin-top: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top .title {
+    width: 100%;
+    margin: 1.5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#top .title h1 {
+    color: white;
+    font-size: 12.4rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#top .title a {
+    background-color: #3f88c5;
+    border: none;
+    border-radius: 5px;
+    color: #140f2d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.4rem;
+}
+
+#middle {
+    background-color: #f49d37;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#middle .info {
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#middle p {
+    width: 100%;
+    margin: 1.5%;
+    font-size: 4.4rem;
+    color: #140f2d;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle .info div {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 9999999999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#middle .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+#middle .info .hide {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    text-align: center;
+}
+
+#middle .info .hide h2 {
+    margin-top: 11vh;
+    color: #140f2d;
+    display: flex;
+    align-items: center;
+}
+
+#middle .info div:hover .hide {
+    display: block;
+}
+
+.skateboard {
+    background-image: url(https://wallpaperaccess.com/full/1386401.jpg);
+}
+
+.gaming {
+    background-image: url(https://signal.avg.com/hubfs/Blog_Content/Avg/Signal/AVG%20Signal%20Images/9%20Ways%20to%20Boost%20Your%20Gaming%20Rig/How_to_Improve_Your_Gaming_PC_Performance-Hero.jpg);
+}
+
+.books {
+    background-image: url(https://images.ctfassets.net/yzn2zv0qt1y1/2F3ES5qmqUnTJ2NJv9AnKT/439a9a6d819d5fbf44c360b3d01091c4/inaki-del-olmo-NIJuEQw0RKg-unsplash__1_.jpg?w=750);
+}
+
+.programming {
+    background-image: url(https://assets-global.website-files.com/5e9aa66fd3886aa2b4ec01ca/5fd3903b41d20bd2244ec3fd_programminglanguagesstickers.jpg);
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #140f2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    background-color: #3f88c5;
+    border: none;
+    border-radius: 5px;
+    color: #edf2f4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
