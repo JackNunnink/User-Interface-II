@@ -73,10 +73,13 @@ body {
     scrollbar-width: none;
 }
 
+header {
+   position: fixed;
+   width: 100%;
+   top: 0; 
+}
+
 header nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
     background-color: #d72638;
     align-items: center;
     height: 8.5vh;
@@ -180,6 +183,7 @@ header nav .links a {
 #middle .info div {
     height: 30vh;
     width: 30vh;
+    margin-bottom: 4%;
     border-radius: 9999999999px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,23 +192,20 @@ header nav .links a {
     justify-content: space-evenly;
 }
 
-#middle .info {
-    display: flex;
-    align-items: flex-end;
-}
-
 #middle .info .hide {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     display: none;
-    text-align: center;
 }
 
 #middle .info .hide h2 {
-    margin-top: 11vh;
+    height: 100%;
     color: #140f2d;
+    padding: 4%;
     display: flex;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -245,4 +246,98 @@ footer a {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    header nav .links {
+        font-size: 2.6rem;
+    }
+
+    #middle {
+        height: 77vh;
+    }
+
+    #middle .info div {
+        height: 25vh;
+        width: 25vh;
+        margin-bottom: 4%;
+    }
+
+    #middle .info .hide {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #middle .info .hide h2 {
+        height: 100%;
+    }
+
+    footer a {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        position: relative;
+    }
+
+    header nav {
+        height: 28%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav .name {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    header nav .links  {
+        font-size: 1.9rem;
+        margin-bottom: 4%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header nav .links a {
+        margin: 4%;
+        padding: 2% 10%;
+    }
+
+    #top {
+        height: 65vh;
+        margin-top: 0;
+    }
+
+    #top .title h1 {
+        font-size: 10.4rem;
+        text-align: center;
+        gap: 2px;
+    }
+
+    #middle {
+        height: 120%;
+    }
+
+    #middle p {
+        font-size: 3.2rem;
+    }
+
+    #middle .info div {
+        height: 25vh;
+        width: 25vh;
+    }
+
+    #middle .info .hide h2 {
+        height: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 376px) {
+    #middle .info .hide h2 {
+        font-size: 1.2rem;
+    }
 }
